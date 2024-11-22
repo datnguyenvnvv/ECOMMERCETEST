@@ -2,241 +2,247 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài Test DAT Nguyễn Quang</title>
     <meta name="description" content="bài test của tôi hoàn thành">
     <meta name="author" content="datpro.vn91@gmail.com">
     <meta name="phone" content="0962395998">
 </head>
-    <style>
-        body{
-            height: 100%;
-            margin: 0 auto;
-        }
-        section{
-            margin: 0 auto;
-            width: 100%;
-            padding-right: .75rem;
-            padding-left: .75rem;
-            /*background-color:red;*/
-            float:left;
-        }
-        .title-text{
+<style>
+    body { height: 100%;  margin: 0 auto; }
+    section{
+        margin: 0 auto;
+        width: 100%;
+        padding-right: .75rem;
+        padding-left: .75rem;
+        /*background-color:red;*/
+        float:left;
+    }
+    .text1{
+        margin: 0 auto;
+        width: 1215px;
+        height: 54px;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 54px;
+        color: #2C2A29;
+        text-align: center;
+    }
+    .box-item{
+        margin: 0 auto;
+        height: auto;
+        width:800px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .text-center{
+        text-align:center;
+    }
+    .item{
+        width: 379px;
+        height: 617.89px;
+        float:left;
+        margin:10px;
+    }
+    .item_image{
+        width: 379px;
+        height: 617px;
+        float: left;
+    }
 
-        }
-        .text1{
-            margin: 0 auto;
-            width: 1215px;
-            height: 54px;
-            font-family: 'Lora';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 54px;
-            color: #2C2A29;
-            text-align: center;
-        }
-        .box-item{
-            margin: 0 auto;
-            height: auto;
-            width:800px;
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-        }
-        .text-center{
-            text-align:center;
-        }
-        .item{
-            width: 379px;
-            height: 617.89px;
-            float:left;
-            margin:10px;
-        }
-        .item_image{
-            width: 379px;
-            height: 617px;
-            float: left;
-        }
-        .image1{
-            background: url(./images/image1.png);
-            border-radius: 16px;
-        }
-        .image2{
-            background: url(./images/image2.png);
-            border-radius: 16px;
-        }
-        /*end ss1*/
-        .box-items2{
-            margin: 0 auto;
-            height: 1608px;
-            width:1376px;
-            flex: none;
-            order: 2;
-            flex-grow: 0;
-        }
-        .items2{
-            margin: 0 auto;
-            height: 800px;
-            width:1376px;
-            flex: none;
-            order: 2;
-            flex-grow: 0;
-        }
-        .item-hero{
-            width: 684px;
-            height: 800px;
-            gap: 0px;
-            border-radius: 24px;
-            opacity: 0px;
-            background-color:#F4F0EA;
-            float:left;
-        }
-        .margin-r-5px{
-            margin-right:5px;
-        }
+    .image1
+    {
+        background: url(./images/image1.png);
+        border-radius: 16px;
+    }
+    .image2
+    {
+        background: url(./images/image2.png);
+        border-radius: 16px;
+    }
+    /*ss2*/
+    .box-items2{
+        margin: 0 auto;
+        height: 1608px;
+        width:1376px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
 
-        .item-hero >.herotext{
-            position: relative;
-            width: 587px;
-            height: 458px;
-            top: 294px;
-            left: 49px;
-            gap: 40px;
-            opacity: 0px;
+    }
+    .items2{
+        margin: 0 auto;
+        height: 800px;
+        width:1376px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+    .item-hero{
+        width: 684px;
+        height: 800px;
+        gap: 0px;
+        border-radius: 24px;
+        opacity: 0px;
+        background-color:#F4F0EA;
+        float:left;
+    }
+    .margin-r-5px{
+        margin-right:5px;
+    }
+    .margin-t-5px{
+        margin-top:5px;
+    }
+    .margin-bt-12px{
+        margin-bottom:12px;
+    }
+    .margin0px{
+        margin:0;
+    }
+    .item-hero >.herotext{
+        position: relative;
+        width: 587px;
+        height: 458px;
+        top: 294px;
+        left: 49px;
+        gap: 40px;
+        opacity: 0px;
 
-        }
-        .margin-r-5px{
-            margin-right:5px;
-        }
-        .margin-t-5px{
-            margin-top:5px;
-        }
-        .margin0px{
-            margin:0;
-        }
-        .h1text{
-            width: 587px;
-            font-weight: 400;
-            line-height: 74px;
-            font-size:64px;
-            font-family: 'Lora';
-            color: #1F1F1F;
-            flex: none;
-            order: 0;
-            align-self: stretch;
-            flex-grow: 0;
-        }
-        .boxtext{
-            width: 587px;
-            height: 104px;
-            flex: none;
-            order: 1;
-            align-self: stretch;
-            flex-grow: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px;
-            display: flex;
-            gap: 8px;
-        }
-        .boxtext >span {
-            width: 587px;
-            height: 30px;
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 30px;
-            color: #1F1F1F;
-            flex: none;
-            order: 0;
-            align-self: stretch;
-            flex-grow: 0;
-            margin: 0;
-        }
-        .boxtext>p{
-            font-family: Lato;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 22px;
-            text-align: left;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-            margin:0;
-        }
+    }
+    .h1text{
+        width: 587px;
+        font-weight: 400;
+        line-height: 74px;
+        font-size:64px;
+        font-family: 'Lora';
+        color: #1F1F1F;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .boxtext{
+        width: 587px;
+        height: 104px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        display: flex;
+        gap: 8px;
+    }
+    .boxtext >span {
+        width: 587px;
+        height: 30px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1F1F1F;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 0;
+    }
+    .boxtext>p{
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin:0;
+    }
 
-        .boxtextbg1
-        {
-            background: url(./images/696px.jpg);
-        }
-        .boxtextbg2
-        {
-            background: url(./images/image3.png);
-        }
-    </style>
+    .boxtextbg1
+    {
+        background: url(./images/696px.jpg);
+    }
+    .boxtextbg2
+    {
+        background: url(./images/image3.png);
+    }
+    @media (max-width: 768px) {
+
+    }
+    @media (max-width: 480px) {
+
+    }
+
+</style>
 <body>
-    <section id="section1">
-        <div class="title-text">
-            <h2 class ="text1">Lorem ullamco </h2>
-        </div>
-        <div class="box-item">
-            <div class="item">
-                <div class="item_image image1"> </div>
-            </div>
-            <div class="item">
-                <div class="item_image image2"> </div>
-            </div>
-        </div>
-        <div class='box-item'>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem reprehenderit esse do anim velit in aliquip dolore ut officia. Consectetur reprehenderit proident do exercitation eu. Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem cupidatat do labore.</p>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem reprehenderit esse do anim velit in aliquip dolore ut officia. Consectetur reprehenderit proident do exercitation eu. Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem cupidatat do labore.</p>
-        </div>
+<!--begin section 1-->
+<section id="section1">
+    <div class="title-text">
+        <h2 class ="text1">Lorem ullamco </h2>
+    </div>
+    <div class="box-item">
 
-    </section>
-    <section id="section2">
-        <div class="box-items2">
-            <div class="items2">
-                <div class="item-hero  margin-r-5px boxtextbg1" > </div>
-                <div class="item-hero">
-                    <div class="herotext">
-                        <h1 class='h1text margin0px'> Lorem ipsum </h1>
-                        <div class="boxtext">
-                            <span>Excepteur eiusmod consectetur</span>
-                            <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
-                        </div>
-                        <div class="boxtext">
+        <div class="item">
+            <div class="item_image image1"></div>
+        </div>
+        <div class="item">
+            <div class="item_image image2"></div>
+        </div>
+    </div>
+    <div class='box-item'>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem reprehenderit esse do anim velit in aliquip dolore ut officia. Consectetur reprehenderit proident do exercitation eu. Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem cupidatat do labore.</p>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem reprehenderit esse do anim velit in aliquip dolore ut officia. Consectetur reprehenderit proident do exercitation eu. Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem cupidatat do labore.</p>
+    </div>
+</section>
+<!--end section 1-->
+<!--begin section 2-->
+<section id="section2">
 
-                            <span>Quis aliqua reprehenderit</span>
-                            <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
-                        </div>
-                        <div class="boxtext">
-                            <span>Ad sit cillum amet duis quis commodo</span>
-                            <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
-                        </div>
+    <div class="box-items2">
+        <div class="items2">
+            <div class="item-hero margin-r-5px boxtextbg1" > </div>
+            <div class="item-hero">
+                <div class="herotext">
+                    <h1 class='h1text margin0px'> Lorem ipsum </h1>
+                    <div class="boxtext">
+                        <span>Excepteur eiusmod consectetur</span>
+                        <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
+                    </div>
+                    <div class="boxtext">
+
+                        <span>Quis aliqua reprehenderit</span>
+                        <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
+                    </div>
+                    <div class="boxtext">
+                        <span>Ad sit cillum amet duis quis commodo</span>
+                        <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
                     </div>
                 </div>
             </div>
-            <div class="items2">
-                <div class="item-hero  margin-r-5px boxtextbg1" > </div>
-                <div class="items2">
-                    <div class="item-hero margin-r-5px  margin-t-5px">
-                        <div class="herotext">
-                            <h1 class='h1text margin0px'> Mollit aliquip do ipsum consectetur </h1>
-                            <div class="boxtext">
-                                <p>Ex laborum ea qui consectetur mollit commodo eiusmod culpa dolor cupidatat. Ullamco dolore irure ea sit elit velit non officia. Ad eu reprehenderit in et voluptate mollit. Reprehenderit incididunt magna consequat enim sit eiusmod est dolor laborum cupidatat.</p>
-                            </div>
-                            <div class="boxtext">
-                                <p>Ipsum minim mollit irure dolore. Sint fugiat deserunt dolor aute enim et cillum adipisicing cillum nostrud anim. Sit dolore incididunt dolore do sunt pariatur consectetur id qui pariatur eu incididunt adipisicing. Irure sint fugiat officia veniam consectetur. Esse laborum amet aliqua ad in sunt labore duis.</p>
-                            </div>
-                        </div>
+        </div>
+        <div class="items2">
+            <div class="item-hero margin-r-5px margin-t-5px">
+                <div class="herotext">
+                    <h1 class='h1text margin0px'> Mollit aliquip do ipsum consectetur </h1>
+
+                    <div class="boxtext">
+                        <p>Ex laborum ea qui consectetur mollit commodo eiusmod culpa dolor cupidatat. Ullamco dolore irure ea sit elit velit non officia. Ad eu reprehenderit in et voluptate mollit. Reprehenderit incididunt magna consequat enim sit eiusmod est dolor laborum cupidatat.</p>
                     </div>
-                    <div class="item-hero margin-t-5px boxtextbg2">  </div>
+                    <div class="boxtext">
+                        <p>Ipsum minim mollit irure dolore. Sint fugiat deserunt dolor aute enim et cillum adipisicing cillum nostrud anim. Sit dolore incididunt dolore do sunt pariatur consectetur id qui pariatur eu incididunt adipisicing. Irure sint fugiat officia veniam consectetur. Esse laborum amet aliqua ad in sunt labore duis.</p>
+                    </div>
                 </div>
             </div>
+            <div class="item-hero margin-t-5px boxtextbg2">  </div>
         </div>
-    </section>
-
+    </div>
+</section>
 
 </body>
 </html>
