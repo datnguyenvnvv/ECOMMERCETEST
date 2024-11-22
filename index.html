@@ -243,6 +243,13 @@
         </div>
     </div>
 </section>
-
+<script>
+    const password = "123456A@";
+    const userPassword = prompt("Vui lòng nhập mật khẩu để truy cập:");
+    if (userPassword !== password) {
+        alert("Sai mật khẩu! Truy cập bị từ chối.");
+        window.location.href = "https://github.com";
+    }
+</script>
 </body>
 </html>
